@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ContentView: View {
+struct NewsPage: View {
     
     var body: some View {
         ZStack {
@@ -25,7 +25,7 @@ struct ContentView: View {
                                 
                                     .foregroundColor(.black)
                                 
-                                    .padding(.top, -200.0)
+                                    .padding(.top, 0.0)
                 Spacer()
                 
                     HStack {
@@ -85,6 +85,9 @@ struct ContentView: View {
                         .frame(width: 200.0, height: 80.0)
                         .foregroundColor(.black)
                         
+
+
+                        
                     
                     Text(title)
                         .foregroundColor(.black)
@@ -94,13 +97,15 @@ struct ContentView: View {
                 .padding()
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
+              
 
                 HStack {
                     
 
                     
                 }
-            
+           
+               
                 
                 .cornerRadius(10)
                 
@@ -128,11 +133,11 @@ struct ContentView: View {
         
         
         
-        struct ContentView_Previews: PreviewProvider {
+        struct NewsPage_Previews: PreviewProvider {
             
             static var previews: some View {
                 
-                ContentView()
+               NewsPage()
                 
             }
             

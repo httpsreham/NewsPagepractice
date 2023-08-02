@@ -11,7 +11,7 @@ import SwiftUI
 struct NewsPagepracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewsPage()
         }
     }
 }
