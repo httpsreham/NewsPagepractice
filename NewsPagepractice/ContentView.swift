@@ -25,16 +25,17 @@ struct ContentView: View {
                                 
                                     .foregroundColor(.black)
                                 
-                                    .padding(.top, -5.0)
+                                    .padding(.top, -200.0)
                 Spacer()
-                HStack {
-                    Image("turtle")
-                        .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
-                        .scaledToFit()
-                        .frame(width: 80.0, height : 200.0)
-                    Text("This is where you can access useful articles for your mental health.")
-                    Spacer()
-                }
+                
+                    HStack {
+                        Image("turtle")
+                            .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                            .scaledToFit()
+                            .frame(width: 80.0, height : 200.0)
+                        Text("This is where you can access useful articles for your mental health.")
+                        
+                    }
                 
       
                 
@@ -50,6 +51,7 @@ struct ContentView: View {
                 Spacer()
                 
             }
+            .padding(.top, -3.0)
             
         }
         
@@ -80,14 +82,14 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(10)
-                        .frame(width: 200.0, height: 70.0)
+                        .frame(width: 200.0, height: 80.0)
                         .foregroundColor(.black)
                         
                     
                     Text(title)
                         .foregroundColor(.black)
                         .padding(0.0)
-                        .frame(width: 120.0, height: 70.0)
+                        .frame(width: 200.0, height: 90.0)
                 }
                 .padding()
                 .background(Color.gray.opacity(0.2))
